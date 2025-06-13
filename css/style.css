@@ -383,8 +383,7 @@ body{
     border:none;
     padding: 0;
     cursor: pointer;
-    background-color: #F4F4E7;
-    /* background-color: transparent; */
+    background-color: #F4F4E7;    
     border-radius: 50%;
     position: absolute;
     left: -10px;
@@ -392,7 +391,8 @@ body{
     width: 50px;
 }
 
-.products__link{    
+.button{    
+    display: inline-block;
     padding: 19px 97px 19px 38px;
     border-radius: 96px;
     background-color: #000;
@@ -403,12 +403,16 @@ body{
     position: relative;
 }
 
-.products__link svg{
+.button svg{
     position: absolute; 
     top: 3px;
     right: 4px;   
 }
 
+.products__link{
+    display: block;
+    margin: 0 auto;
+}
 /* PRODUCTS END */
 
 
@@ -439,8 +443,104 @@ body{
 }
 
 .slogan__img{
-    margin-top: -150px;
+    margin-top: -145px;
 }
 
 
 /* SLOGAN END */
+
+/* PARTNERS BEGIN */
+
+.partners{
+    margin-bottom: 150px;
+
+}
+
+.partners__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 120px;
+}
+
+.partners__info{
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+}
+
+.partners__info-title{
+        font-family: 'WorkSans-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.3;
+        color: #0E0D0D;        
+}
+
+.partners__info-text{
+        font-family: 'WorkSans-Light', sans-serif;
+        font-weight: 300;
+        font-size: 20px;         
+        color: #0E0D0D;
+        padding-bottom: 20px;
+        margin-top: auto;
+}
+
+.partners__box-top{
+    display: flex;
+    justify-content: space-between;    
+    gap: 0 20px;
+    background-color: #F4F4E7;
+    border-radius: 10px;
+}
+
+.wrapper__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;   
+    
+}
+
+.partners__box-list-item{
+    padding: 7px 0;
+    padding-left: 39px;
+    position: relative;
+}
+
+.partners__box-list-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/partners-dots.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+
+.partners__box-list-item p{
+    padding-left: 10px;
+    font-family: 'WorkSans-Regular', sans-serif;
+    color:#000;
+    
+}
+
+.partners__box-list-item p span{
+    font-weight: 400;    
+}
+
+.partners__logo{
+    max-width: 60px;
+}
+
+.partners__slogan{
+    margin-top: 15px;
+    background-color: #0D1615;
+    border-radius: 10px;
+    padding: 30px;
+    color:#fff;
+}
+
+/* PARTNERS END */
